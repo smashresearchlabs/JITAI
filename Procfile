@@ -1,0 +1,2 @@
+web: gunicorn JITAIGamblingRiskMitiGators-Django.project.wsgi:application
+worker: sh -c "celery -A JITAIGamblingRiskMitiGators-Django.project.celery worker --loglevel=info & celery -A JITAIGamblingRiskMitiGators-Django.project.celery beat --loglevel=info"
