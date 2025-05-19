@@ -1,0 +1,90 @@
+{
+  "expo": {
+    "name": "JITAI MitiGators",
+    "slug": "jitaigamblingriskmitigatorsrn",
+    "version": "1.0.7",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "icon": "./assets/images/AppIcon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jonathanwukitsch.jitaigamblingriskmitigatorsrn",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/AppIconTransparent.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jonathanwukitsch.jitaigamblingriskmitigatorsrn"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-build-properties",
+      "expo-font",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "16.0",
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/adaptive-icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/AppIcon.png",
+          "dark": {
+            "image": "./assets/images/AppIcon-Dark.png",
+            "backgroundColor": "#1E1E1E"
+          },
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "owner": "jonathanwuki",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d6824270-cd2f-4b78-b159-e70d0ce8854d"
+      }
+    }
+  }
+}
